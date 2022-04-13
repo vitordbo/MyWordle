@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle de Mariah</title>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- animação css https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="game">
+            <header>
+                <i class="far fa-question-circle" id="help"></i>
+                <h1 class="title">Termo de
+                    <a href="https://www.youtube.com/watch?v=yKNxeF4KMsY" target="_blank" rel="noopener noreferrer"> Mariah </a></h1>
+                <i class="fas fa-chart-bar" id="stats"></i>
+            </header>
+
+            <div id="board-container">
+                <h2 id="final-score"></h2>
+                <div id="board"></div>
+            </div>
+
+            <!-- onde vai ficar o teclado -->
+            <div id="keyboard-container">
+                <!-- linhas do teclado com as teclas-->
+                <div class="keyboard-row">
+                    <button class="keyboard-button" data-key="q">q</button>
+                    <button class="keyboard-button" data-key="w">w</button>
+                    <button class="keyboard-button" data-key="e">e</button>
+                    <button class="keyboard-button" data-key="r">r</button>
+                    <button class="keyboard-button" data-key="t">t</button>
+                    <button class="keyboard-button" data-key="y">y</button>
+                    <button class="keyboard-button" data-key="u">u</button>
+                    <button class="keyboard-button" data-key="i">i</button>
+                    <button class="keyboard-button" data-key="o">o</button>
+                    <button class="keyboard-button" data-key="p">p</button>
+                </div>
+                <div class="keyboard-row">
+                    <div class="spacer-half"></div>
+                    <button class="keyboard-button" data-key="a">a</button>
+                    <button class="keyboard-button" data-key="s">s</button>
+                    <button class="keyboard-button" data-key="d">d</button>
+                    <button class="keyboard-button" data-key="f">f</button>
+                    <button class="keyboard-button" data-key="g">g</button>
+                    <button class="keyboard-button" data-key="h">h</button>
+                    <button class="keyboard-button" data-key="j">j</button>
+                    <button class="keyboard-button" data-key="k">k</button>
+                    <button class="keyboard-button" data-key="l">l</button>
+                    <div class="spacer-half"></div>
+                </div>
+                <div class="keyboard-row">
+                    <button class="keyboard-button" data-key="enter" class="wide-button">
+                    Enter
+                  </button>
+                    <button class="keyboard-button" data-key="z">z</button>
+                    <button class="keyboard-button" data-key="x">x</button>
+                    <button class="keyboard-button" data-key="c">c</button>
+                    <button class="keyboard-button" data-key="v">v</button>
+                    <button class="keyboard-button" data-key="b">b</button>
+                    <button class="keyboard-button" data-key="n">n</button>
+                    <button class="keyboard-button" data-key="m">m</button>
+                    <button class="keyboard-button" data-key="del" class="wide-button">
+                    DEL
+                  </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="help-modal" class="modal">
+            <!-- Modal de ajuda -->
+            <div class="modal-content">
+                <span class="close" id="close-help">&times;</span>
+
+                <p>Adivinhe a palavra em 6 tentativas.</p>
+
+                <p>
+                    Cada palpite deve ser feito com uma palavra de 5 letras. Aperte enter para enviar.
+                </p>
+
+                <p>
+                    Após cada palpite, a cor dos quadrados e teclado irá mudar mostrar e mostrar quão próximo você está da resposta.
+                </p>
+
+                <!-- algo mais poderia ser colocado aqui no modal -->
+                <hr />
+                <p>Uma nova palavra estará disponível a cada dia!</p>
+            </div>
+        </div>
+
+        <div id="stats-modal" class="modal">
+            <!-- Modal de estatisticas -->
+            <div class="modal-content">
+                <span class="close" id="close-stats">&times;</span>
+
+                <h2>Estatísticas</h2>
+
+                <h3><strong>Total de partidas</strong>: <span id="total-played"></span></h3>
+
+                <h3><strong>Vitórias</strong>: <span id="total-wins"></span></h3>
+
+                <h3><strong>% de vitórias</strong>: <span id="win-pct"></span> %</h3>
+
+                <h3>
+                    <strong>Vitórias em sequência</strong>: <span id="current-streak"></span>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
