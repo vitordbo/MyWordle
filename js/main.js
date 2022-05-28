@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // como seria pra ver se palavra existe ?
-
     function preserveGameState() {
         // preservar somente quando a palavra foi enviada
         // atualizar e manter as palavras => evitar roubo
