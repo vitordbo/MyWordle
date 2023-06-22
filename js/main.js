@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     // muda de palavra a cada f5 
-    const words = ["sagaz", "exito", "mexer", "termo", "senso", "nobre", "afeto", "plena", "etica", "mutua", "tenue", "sutil",
-        "vigor", "aquem", "porem", "audaz", "fazer", "sanar", "inato", "assim", "ideia", "fosse", "desde", "poder", "moral",
-        "honra", "muito", "justo", "futil", "anexo", "razao", "etnia", "sobre", "icone", "sonho", "lapso"
+    const words = ["vitor", "moral", "sonho", "tempo", "ideia", "nobre", "beber", "plena", "chuva", "fugir", "sutil",
+        "nunca", "fauna", "porem", "livro", "fazer", "puxar", "prova", "assim", "grupo", "desde", "poder",
+        "honra", "muito", "justo", "futil", "anexo", "razao", "grave", "sobre", "icone", "lapso"
     ];
 
     let currentWord = words[currentWordIndex];
